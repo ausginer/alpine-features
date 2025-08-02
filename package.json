@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/ausginer/alpine-features#readme",
   "devDependencies": {
-    "@devcontainers/cli": "^0.56.0"
+    "@devcontainers/cli": "^0.80.0"
   }
 }
