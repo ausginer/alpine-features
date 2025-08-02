@@ -1,0 +1,19 @@
+{
+  "test": {
+    "image": "alpine:latest",
+    "features": {
+      "alpine-node": {}
+    }
+  },
+  "custom-versions": {
+    "image": "alpine:latest", 
+    "features": {
+      "alpine-node": {
+        "nodeVersion": "22",
+        "npmVersion": "latest",
+        "yarnVersion": "latest",
+        "pnpmVersion": "latest"
+      }
+    }
+  }
+}

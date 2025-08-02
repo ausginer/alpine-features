@@ -1,0 +1,6 @@
+{
+  "id": "alpine-chromium",
+  "name": "Chromium on Alpine",
+  "version": "1.0.0",
+  "description": "Installs Chromium and ChromeDriver for automated testing and web development on Alpine Linux."
+}

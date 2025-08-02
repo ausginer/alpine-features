@@ -1,0 +1,16 @@
+{
+  "test": {
+    "image": "alpine:latest",
+    "features": {
+      "alpine-temurin": {}
+    }
+  },
+  "java17": {
+    "image": "alpine:latest",
+    "features": {
+      "alpine-temurin": {
+        "javaVersion": "17"
+      }
+    }
+  }
+}

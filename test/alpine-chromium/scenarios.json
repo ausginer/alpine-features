@@ -1,0 +1,8 @@
+{
+  "test": {
+    "image": "alpine:latest",
+    "features": {
+      "alpine-chromium": {}
+    }
+  }
+}

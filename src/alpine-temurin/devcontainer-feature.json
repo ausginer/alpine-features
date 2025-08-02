@@ -1,0 +1,13 @@
+{
+  "id": "alpine-temurin",
+  "name": "Temurin on Alpine",
+  "version": "1.0.0",
+  "description": "Installs Temurin JDK for a consistent Java development environment on Alpine Linux.",
+  "options": {
+    "javaVersion": {
+      "type": "string",
+      "description": "The Java version to install.",
+      "default": "lts"
+    }
+  }
+}

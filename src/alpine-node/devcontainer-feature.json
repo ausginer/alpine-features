@@ -1,0 +1,28 @@
+{
+  "id": "alpine-node",
+  "name": "Node.js on Alpine",
+  "version": "1.0.0",
+  "description": "Installs Node.js, npm, Yarn and pnpm versions for a consistent JavaScript development environment on Alpine Linux.",
+  "options": {
+    "nodeVersion": {
+      "type": "string",
+      "description": "The Node.js version to install.",
+      "default": "lts"
+    },
+    "npmVersion": {
+      "type": "string",
+      "description": "The npm version to install. Set to 'none' to proceed with default installation.",
+      "default": "none"
+    },
+    "yarnVersion": {
+      "type": "string",
+      "description": "The Yarn version to install. Set to 'none' to skip.",
+      "default": "none"
+    },
+    "pnpmVersion": {
+      "type": "string",
+      "description": "The pnpm version to install. Set to 'none' to skip.",
+      "default": "none"
+    }
+  }
+}

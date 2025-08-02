@@ -1,0 +1,22 @@
+{
+    "sourceInformation": {
+        "documentationURL": "https://github.com/ausginer/alpine-features/tree/main/README.md"
+    },
+    "features": [
+        {
+            "id": "alpine-node",
+            "name": "Node.js on Alpine",
+            "documentationURL": "https://github.com/ausginer/alpine-features/tree/main/src/alpine-node"
+        },
+        {
+            "id": "alpine-temurin", 
+            "name": "Temurin on Alpine",
+            "documentationURL": "https://github.com/ausginer/alpine-features/tree/main/src/alpine-temurin"
+        },
+        {
+            "id": "alpine-chromium",
+            "name": "Chromium on Alpine", 
+            "documentationURL": "https://github.com/ausginer/alpine-features/tree/main/src/alpine-chromium"
+        }
+    ]
+}
