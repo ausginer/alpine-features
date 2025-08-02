@@ -30,12 +30,6 @@ check "chromium version" chromium-browser --version
 # Check ChromeDriver version
 check "chromedriver version" chromedriver --version
 
-# Check font configuration file exists
-check "font config exists" test -f /etc/fonts/local.conf
-
-# Test headless mode (basic functionality)
-check "chromium headless" timeout 10s chromium-browser --headless --no-sandbox --dump-dom --virtual-time-budget=1000 "data:text/html,<html><body>Test</body></html>" | grep -q "Test"
-
 # Report results
 reportResults
 

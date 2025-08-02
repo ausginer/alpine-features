@@ -8,10 +8,10 @@ LANG='en_US.UTF-8'
 LANGUAGE='en_US:en'
 LC_ALL='en_US.UTF-8'
 
-echo "JAVA_HOME=/opt/java/openjdk" >> /etc/environment
-echo "export PATH=\"/opt/java/openjdk/bin:\$PATH\"" >> /etc/profile
+echo "export JAVA_HOME=/opt/java/openjdk" >> /etc/profile
+echo "export PATH=\"\$JAVA_HOME/bin:\$PATH\"" >> /etc/profile
 
-export JAVA_HOME=/opt/java/openjdk
+export JAVA_HOME="/opt/java/openjdk"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Install required packages for Java runtime

@@ -1,7 +1,18 @@
-#!/bin/bash
+#!/bin/sh
 
 # Test Java 17 installation
 set -e
+
+# Install bash temporarily for testing (if not already available)
+if ! command -v bash >/dev/null 2>&1; then
+  apk add --no-cache --virtual .test-deps bash
+  CLEANUP_BASH=true
+fi
+
+# Re-execute this script with bash for the test library
+if [ "$1" != "--bash-mode" ]; then
+  exec bash "$0" --bash-mode "$@"
+fi
 
 # Source test library
 source dev-container-features-test-lib
@@ -23,3 +34,8 @@ check "run java 17" java Test17
 
 # Report results
 reportResults
+
+# Cleanup temporary bash installation if we installed it
+if [ "$CLEANUP_BASH" = "true" ]; then
+  apk del .test-deps
+fi
