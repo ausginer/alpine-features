@@ -10,15 +10,6 @@ apk add --no-cache \
     chromium-chromedriver
 
 # Set environment variables for testing frameworks
-echo "CHROME_BIN=/usr/bin/chromium-browser" >> /etc/environment
-echo "CHROME_PATH=/usr/lib/chromium/" >> /etc/environment
-echo "CHROMIUM_FLAGS=\
-    --no-sandbox \
-    --disable-gpu \
-    --disable-dev-shm-usage \
-    --disable-extensions \
-    --disable-background-timer-throttling \
-    --disable-backgrounding-occluded-windows \
-    --disable-renderer-backgrounding \
-    --remote-debugging-port=9222 \
-" >> /etc/environment
+echo "export CHROME_BIN=/usr/bin/chromium-browser" >> /etc/profile
+echo "export CHROME_PATH=/usr/lib/chromium/" >> /etc/profile
+echo "export CHROMIUM_FLAGS=\"--no-sandbox --disable-gpu --disable-dev-shm-usage --disable-extensions --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-renderer-backgrounding --remote-debugging-port=9222\"" >> /etc/profile

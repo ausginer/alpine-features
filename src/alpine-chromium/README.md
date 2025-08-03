@@ -138,7 +138,6 @@ const puppeteer = require('puppeteer');
 // Puppeteer handles headless mode automatically
 const browser = await puppeteer.launch({
   executablePath: process.env.CHROME_BIN,
-  args: ['--no-sandbox', '--disable-dev-shm-usage']
 });
 ```
 
@@ -150,7 +149,6 @@ const { chromium } = require('playwright');
 const browser = await chromium.launch({
   headless: true, // or false for debugging
   executablePath: process.env.CHROME_BIN,
-  args: ['--no-sandbox', '--disable-dev-shm-usage']
 });
 ```
 
@@ -161,7 +159,6 @@ const chrome = require('selenium-webdriver/chrome');
 
 const options = new chrome.Options();
 options.addArguments('--headless'); // Explicit headless control
-options.addArguments('--no-sandbox', '--disable-dev-shm-usage');
 options.setChromeBinaryPath(process.env.CHROME_BIN);
 
 const driver = await new Builder()
@@ -169,13 +166,6 @@ const driver = await new Builder()
   .setChromeOptions(options)
   .build();
 ```
-
-## Security Considerations
-
-- Chromium requires `--no-sandbox` flag in containerized environments
-- All packages are from official Alpine repositories
-- No unnecessary GUI or font dependencies installed
-- Minimal attack surface with headless-only configuration
 
 ## Limitations
 

@@ -28,7 +28,7 @@ Installs Node.js, npm, Yarn and pnpm versions for a consistent JavaScript develo
 
 - `lts` - Latest LTS version
 - `latest` - Latest stable version  
-- `18`, `20`, `21` - Specific major versions
+- `18`, `20`, `24` - Specific major versions
 - `18.17.0` - Specific exact versions
 
 ## Package Managers
