@@ -21,7 +21,7 @@ To reference a feature from this repository, add the desired features to a `devc
     "image": "mcr.microsoft.com/devcontainers/base:alpine",
     "features": {
         "ghcr.io/ausginer/alpine-features/alpine-node:1": {
-            "nodeVersion": "18",
+            "nodeVersion": "22",
             "npmVersion": "latest",
             "yarnVersion": "latest"
         },
@@ -82,14 +82,6 @@ The features are automatically built and published using GitHub Actions. To test
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## Security
-
-These features are designed with security in mind:
-- Use official package sources when possible
-- Verify signatures and checksums
-- Follow Alpine Linux security best practices
-- Minimal attack surface with Alpine's lightweight base
 
 ## Support
 
