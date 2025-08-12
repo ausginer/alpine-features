@@ -11,7 +11,7 @@ jobs:
     outputs:
       features: ${{ steps.filter.outputs.changes }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: dorny/paths-filter@v3
         id: filter
         with:
@@ -31,7 +31,7 @@ jobs:
           - alpine:3.21
           - alpine:latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: "Setup Node.js"
         uses: actions/setup-node@v4
@@ -53,7 +53,7 @@ jobs:
       matrix:
         features: ${{ fromJSON(needs.detect-changes.outputs.features) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: "Setup Node.js"
         uses: actions/setup-node@v4

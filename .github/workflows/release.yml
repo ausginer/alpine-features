@@ -13,7 +13,7 @@ jobs:
       packages: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: "Publish Features"
         uses: devcontainers/action@v1
@@ -38,7 +38,7 @@ jobs:
           - alpine:3.21
           - alpine:latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: "Setup Node.js"
         uses: actions/setup-node@v4
@@ -62,7 +62,7 @@ jobs:
           - alpine-temurin
           - alpine-chromium
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: "Setup Node.js"
         uses: actions/setup-node@v4
